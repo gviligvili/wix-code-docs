@@ -1,8 +1,7 @@
 { "name": "groups",
   "memberOf": "wix-groups-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -14,8 +13,7 @@
   "properties": [],
   "operations":
     [ { "name": "createGroup",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "group",
@@ -94,8 +92,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "deleteGroup",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "groupId",
@@ -147,8 +144,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "getGroup",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "groupId",
@@ -197,8 +193,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "getGroupBySlug",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "slug",
@@ -247,8 +242,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listGroups",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "pagination",
@@ -353,8 +347,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateGroup",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "group",
@@ -537,8 +530,7 @@
               "doc": "Site member ID of the group creator." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "DeleteGroupResult_38172693760",
         "locations":
           [ { "lineno": 1,
@@ -642,8 +634,7 @@
               "doc": "Site member ID of the group creator." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GetGroupBySlugResult_37976450671",
         "locations":
           [ { "lineno": 1,
@@ -747,8 +738,7 @@
               "doc": "Site member ID of the group creator." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GetGroupResult_38193638321",
         "locations":
           [ { "lineno": 1,
@@ -852,8 +842,7 @@
               "doc": "Site member ID of the group creator." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Group_31091123328",
         "locations":
           [ { "lineno": 24,
@@ -1013,8 +1002,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Group_37471644910",
         "locations":
           [ { "lineno": 1,
@@ -1056,8 +1044,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListGroupsRequest_2540096142",
         "locations":
           [ { "lineno": 1,
@@ -1119,8 +1106,7 @@
               "type": "wix-groups-backend.PagingMetadata_3804912776" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "QueryOptions_114952375",
         "locations":
           [ { "lineno": 1172,
@@ -1242,7 +1228,6 @@
               "doc": "Site member ID of the group creator." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }

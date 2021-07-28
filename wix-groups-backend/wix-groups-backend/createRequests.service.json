@@ -1,8 +1,7 @@
 { "name": "createRequests",
   "memberOf": "wix-groups-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 17,
       "filename": "index.js" },
@@ -14,8 +13,7 @@
   "properties": [],
   "operations":
     [ { "name": "approveCreateRequests",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "groupRequestIds",
@@ -71,8 +69,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelCreateRequest",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "groupRequestId",
@@ -124,8 +121,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listCreateRequests",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "pagination",
@@ -224,8 +220,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rejectCreateRequests",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "rejections",
@@ -357,8 +352,7 @@
               "doc": "Group requested for creation." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListGroupRequestsRequest_2967715637",
         "locations":
           [ { "lineno": 1,
@@ -420,8 +414,7 @@
               "type": "wix-groups-backend.PagingMetadata_3804912776" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "QueryOptions_7474206393",
         "locations":
           [ { "lineno": 1172,
