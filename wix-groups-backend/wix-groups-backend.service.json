@@ -1,6 +1,7 @@
 { "name": "wix-groups-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -156,7 +157,8 @@
               "doc": "vertical coordinate" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GroupDetails_Position_1843124244",
         "locations":
           [ { "lineno": 65,
@@ -178,7 +180,52 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GroupDetails_Position_3797672390",
+        "locations":
+          [ { "lineno": 65,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Position of the corner of the cover image (or logo)",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "x",
+              "type": "number",
+              "doc": "horizontal coordinate",
+              "optional": true },
+            { "name": "y",
+              "type": "number",
+              "doc": "vertical coordinate",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "GroupDetails_Position_3983049832",
+        "locations":
+          [ { "lineno": 57,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Position of the corner of the cover image (or logo)",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "x",
+              "type": "number",
+              "doc": "horizontal coordinate" },
+            { "name": "y",
+              "type": "number",
+              "doc": "vertical coordinate" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "GroupMember_11598825520",
         "locations":
           [ { "lineno": 73,
@@ -229,7 +276,38 @@
               "doc": "Group requested for creation." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GroupRequest_56154301453",
+        "locations":
+          [ { "lineno": 87,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Site owners may choose to require that site members request approval when creating groups (available in the Wix Business Manager under Groups Application Settings).",
+            "description":
+              [ "When approval is required, only a groups manager can approve a request to create a new group.",
+                "When a group request is approved, the new group is added to the groups lists in the Wix UI." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Group request ID" },
+            { "name": "status",
+              "type": "string",
+              "doc": "Status of group request.\n- `PENDING` - Pending group request.\n- `APPROVED` - Approved group request.\n- `REJECTED` - Rejected group request.\n- `CANCELLED` - Cancelled group request.\nOne of:\n + `\"UNKNOWN_STATUS\"`\n + `\"PENDING\"`\n + `\"APPROVED\"`\n + `\"REJECTED\"`\n + `\"CANCELLED\"`" },
+            { "name": "rejectionReason",
+              "type": "string",
+              "doc": "Group request rejection reason." },
+            { "name": "group",
+              "type": "wix-groups-backend.Group_44350002960",
+              "doc": "Group requested for creation." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Group_38709206326",
         "locations":
           [ { "lineno": 16,
@@ -272,7 +350,96 @@
               "doc": "Site member ID of the group creator." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Group_44350002960",
+        "locations":
+          [ { "lineno": 16,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Group ID." },
+            { "name": "name",
+              "type": "string",
+              "doc": "Group title." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "A unique part of a group's URL (e.g., 'https:/example.com/groups/slug')." },
+            { "name": "description",
+              "type": "string",
+              "doc": "Group description in DraftJS format." },
+            { "name": "privacyStatus",
+              "type": "string",
+              "doc": "Group privacy level.\n- `PUBLIC` - Anyone can see group in groups list and its content. Anyone can join group.\n- `PRIVATE` - Anyone can see group in groups list, but only group members can see its content. In order to join group, a group join request should be submitted.\n- `SECRET` - Only group members and a groups manager can see group in group list. New group members can only be added by other group members.\nOne of:\n + `\"UNKNOWN\"`\n + `\"PUBLIC\"`\n + `\"PRIVATE\"`\n + `\"SECRET\"`" },
+            { "name": "coverImage",
+              "type": "wix-groups-backend.Group_GroupDetails_13040078070",
+              "doc": "Group details." },
+            { "name": "memberTitle",
+              "type": "string",
+              "doc": "What group members are called (e.g., 'Coworkers', 'Friends', 'Students')." },
+            { "name": "settings",
+              "type": "wix-groups-backend.Group_GroupSettings_6548797592",
+              "doc": "Group settings." },
+            { "name": "lastActivityDate",
+              "type": "Date",
+              "doc": "Date and time the group was last active (e.g., last post or comment)." },
+            { "name": "createdBy",
+              "type": "string",
+              "doc": "Site member ID of the group creator." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "Group_GroupDetails_11668596864",
+        "locations":
+          [ { "lineno": 117,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Group details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "image",
+              "type": "wix-groups-backend.GroupDetails_Logo_5793469391",
+              "doc": "Group logo. You cannot upload your own logo.",
+              "optional": true },
+            { "name": "logoPosition",
+              "type": "wix-groups-backend.GroupDetails_Position_3797672390",
+              "doc": "Position of the corner of the cover image (or logo)",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "Group_GroupDetails_13040078070",
+        "locations":
+          [ { "lineno": 109,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Group details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "image",
+              "type": "wix-groups-backend.GroupDetails_Logo_6071535554",
+              "doc": "Group logo. You cannot upload your own logo." },
+            { "name": "position",
+              "type": "wix-groups-backend.GroupDetails_Position_3983049832",
+              "doc": "Position of the corner of the cover image (or logo)" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Group_GroupDetails_6027800230",
         "locations":
           [ { "lineno": 117,
@@ -294,7 +461,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Group_GroupDetails_7399281436",
         "locations":
           [ { "lineno": 109,
@@ -314,7 +482,8 @@
               "doc": "Position of the corner of the cover image (or logo)" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Group_GroupSettings_6085353987",
         "locations":
           [ { "lineno": 136,

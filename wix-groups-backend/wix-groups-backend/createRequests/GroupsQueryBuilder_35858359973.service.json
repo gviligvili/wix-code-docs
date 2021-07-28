@@ -1,7 +1,8 @@
 { "name": "GroupsQueryBuilder_35858359973",
   "memberOf": "wix-groups-backend.createRequests",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" },
@@ -319,7 +320,8 @@
         "extra":
           {  } },
       { "name": "find",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "options",
@@ -329,7 +331,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-groups-backend.createRequests.GroupsQueryResult_102012387861" ] },
+                  [ "wix-groups-backend.createRequests.GroupsQueryResult_107653184495" ] },
             "doc": "Fulfilled - The results of a groups query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-groups-backend.GroupsQueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `GroupsQueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
           [ { "lineno": 982,

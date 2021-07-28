@@ -1,11 +1,11 @@
-{ "name": "GroupsQueryResult_102012387861",
-  "memberOf": "wix-groups-backend.createRequests",
+{ "name": "GroupsQueryResult_78360735527",
+  "memberOf": "wix-groups-backend.groups",
   "mixes": [],
   "labels":
-    [ "removed" ],
+    [ "new" ],
   "location":
     { "lineno": 999,
-      "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" },
+      "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" },
   "docs":
     { "summary": "The results of a groups query, containing the retrieved items.",
       "description":
@@ -25,7 +25,7 @@
         "type": "number",
         "locations":
           [ { "lineno": 1100,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Returns the index of the current results page number.",
             "description":
@@ -50,16 +50,16 @@
         "type":
           { "name": "Array",
             "typeParams":
-              [ "wix-groups-backend.GroupRequest_50513504819" ] },
+              [ "wix-groups-backend.Group_44350002960" ] },
         "locations":
           [ { "lineno": 1009,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Returns the items that match the query.",
             "description":
               [ "The current page of items retrieved by the query.",
                 "",
-                "Group requests.",
+                "Groups.",
                 "",
                 "",
                 "> **Note:** When no items match the query, the items array is empty.",
@@ -78,7 +78,7 @@
         "type": "number",
         "locations":
           [ { "lineno": 1025,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Returns the number of items in the current results page.",
             "description":
@@ -99,7 +99,7 @@
         "type": "number",
         "locations":
           [ { "lineno": 1076,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Returns the query page size.",
             "description":
@@ -117,10 +117,10 @@
         "labels": [],
         "get": true,
         "set": false,
-        "type": "wix-groups-backend.createRequests.GroupsQueryBuilder_35858359973",
+        "type": "wix-groups-backend.groups.GroupsQueryBuilder_19769261536",
         "locations":
           [ { "lineno": 1047,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Contains functionality for refining a groups query.",
             "description":
@@ -158,7 +158,7 @@
         "type": "number",
         "locations":
           [ { "lineno": 1037,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Returns the total number of items that match the query.",
             "description":
@@ -177,7 +177,7 @@
         "type": "number",
         "locations":
           [ { "lineno": 1088,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Returns the total number of pages the query produced.",
             "description":
@@ -200,11 +200,11 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-groups-backend.createRequests.GroupsQueryResult_102012387861" ] },
+                  [ "wix-groups-backend.groups.GroupsQueryResult_78360735527" ] },
             "doc": "Fulfilled - The results of a groups query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-groups-backend.GroupsQueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `GroupsQueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
           [ { "lineno": 1116,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Retrieves the next page of query results.",
             "description":
@@ -231,11 +231,11 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-groups-backend.createRequests.GroupsQueryResult_102012387861" ] },
+                  [ "wix-groups-backend.groups.GroupsQueryResult_78360735527" ] },
             "doc": "Fulfilled - The results of a groups query, containing the retrieved items.\nWhen you execute a query with the [`find()`](wix-groups-backend.GroupsQueryBuilder.html#find)\nfunction, it returns a Promise that resolves to a `GroupsQueryResult` object.\nThis object contains the items that match the query, information about the\nquery itself, and functions for paging through the query results." },
         "locations":
           [ { "lineno": 1137,
-              "filename": "wix_social_groups_api_v2_GroupRequestsService_QueryGroupRequests_queryCreateRequests.js" } ],
+              "filename": "wix_social_groups_api_v2_GroupsService_QueryGroups_queryGroups.js" } ],
         "docs":
           { "summary": "Retrieves the previous page of query results.",
             "description":

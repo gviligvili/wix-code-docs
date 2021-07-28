@@ -1,7 +1,8 @@
 { "name": "createRequests",
   "memberOf": "wix-groups-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 17,
       "filename": "index.js" },
@@ -13,7 +14,8 @@
   "properties": [],
   "operations":
     [ { "name": "approveCreateRequests",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "groupRequestIds",
@@ -31,7 +33,7 @@
                 "typeParams":
                   [ { "name": "Array",
                       "typeParams":
-                        [ "wix-groups-backend.GroupRequest_50513504819" ] } ] },
+                        [ "wix-groups-backend.GroupRequest_56154301453" ] } ] },
             "doc": "Fulfilled - Approved group requests." },
         "locations":
           [ { "lineno": 1,
@@ -69,7 +71,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "cancelCreateRequest",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "groupRequestId",
@@ -82,7 +85,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-groups-backend.createRequests.CancelGroupRequestResult_49357700856" ] },
+                  [ "wix-groups-backend.createRequests.CancelGroupRequestResult_54998497490" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 20,
@@ -121,7 +124,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listCreateRequests",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "pagination",
@@ -133,7 +137,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-groups-backend.createRequests.ListGroupRequestsResult_58231823844" ] },
+                  [ "wix-groups-backend.createRequests.ListGroupRequestsResult_63872620478" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 15,
@@ -220,7 +224,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "rejectCreateRequests",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "rejections",
@@ -238,7 +243,7 @@
                 "typeParams":
                   [ { "name": "Array",
                       "typeParams":
-                        [ "wix-groups-backend.GroupRequest_50513504819" ] } ] },
+                        [ "wix-groups-backend.GroupRequest_56154301453" ] } ] },
             "doc": "Fulfilled - Rejected group requests." },
         "locations":
           [ { "lineno": 8,
@@ -326,7 +331,34 @@
               "doc": "Group requested for creation." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "CancelGroupRequestResult_54998497490",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_social_groups_api_v2_GroupRequestsService_CancelGroupRequest_cancelCreateRequest.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Group request ID" },
+            { "name": "status",
+              "type": "string",
+              "doc": "Status of group request.\n- `PENDING` - Pending group request.\n- `APPROVED` - Approved group request.\n- `REJECTED` - Rejected group request.\n- `CANCELLED` - Cancelled group request.\nOne of:\n + `\"UNKNOWN_STATUS\"`\n + `\"PENDING\"`\n + `\"APPROVED\"`\n + `\"REJECTED\"`\n + `\"CANCELLED\"`" },
+            { "name": "rejectionReason",
+              "type": "string",
+              "doc": "Group request rejection reason." },
+            { "name": "group",
+              "type": "wix-groups-backend.Group_44350002960",
+              "doc": "Group requested for creation." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ListGroupRequestsRequest_2967715637",
         "locations":
           [ { "lineno": 1,
@@ -366,7 +398,30 @@
               "type": "wix-groups-backend.PagingMetadata_3804912776" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "ListGroupRequestsResult_63872620478",
+        "locations":
+          [ { "lineno": 8,
+              "filename": "wix_social_groups_api_v2_GroupRequestsService_ListGroupRequests_listCreateRequests.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "createRequests",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-groups-backend.GroupRequest_56154301453" ] },
+              "doc": "Group requests." },
+            { "name": "metadata",
+              "type": "wix-groups-backend.PagingMetadata_3804912776" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "QueryOptions_7474206393",
         "locations":
           [ { "lineno": 1172,
