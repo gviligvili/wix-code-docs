@@ -470,7 +470,7 @@
                       " * \"JWS.eyJraWQiOiJQSXpvZGJiQiIsImFsZyI6IkhTMjU2In0.eyJkYXRhIjoie1wiaWRcIjpcImViNDNhYjk5LTMwNDAtNGNhMC04OTNkLTNjNWZhMzdjNjNhZFwiLFwiY29sbGVjdGlvbklkXCI6XCI5YmVjNThlNi02NDExLTQ5OTEtOGU1ZC0wYWRhOTE4MmI5NWVcIixcIm1ldGFTaXRlSWRcIjpcIjFmZjQ2YTk2LWRlYTYtNDlkYS04M2JhLTUxNjRmYjYyZDgzOVwiLFwib3duZXJcIjpmYWxzZSxcImNyZWF0aW9uVGltZVwiOjE2MjgxMTcwNjU5NDcsXCJleHBpcmVzSW5cIjoxMjA5NjAwMDAwLFwiZXhwaXJhdGlvblRpbWVcIjoxNjI4MTE3MTg1OTQ3LFwibGFzdFJlZnJlc2hlZFwiOjAsXCJhZG1pblwiOmZhbHNlfSIsImlhdCI6MTYyODExNzA2NX0.VGNW1Q26zD8BmSvlljFlP6-OhvYs_Pa2hQidS2tt9No\"",
                       " */" ],
                   "extra":
-                    { "description": "This example changes the currently logged-in member's email address\nwith the member-provided email and the retrieved member ID." } } ],
+                    { "description": "This example passes a new login email provided by the currently logged-in member\nto a backend function that automatically retrieves the member's ID." } } ],
             "extra":
               {  } },
         "extra":
