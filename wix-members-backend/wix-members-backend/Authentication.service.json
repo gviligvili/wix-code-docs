@@ -415,7 +415,7 @@
                 "that resolves to an updated member object",
                 "when the specified member's login email address is changed.",
                 "",
-                "After running this function, the the specified member can log in with the new login email.",
+                "After running this function, the the specified member can log in with the new email address.",
                 "If the specified member uses social login (for example, Google login)",
                 "and the member tries to log in with the old email address,",
                 "the member will be re-registered with the old email address.",
@@ -445,7 +445,7 @@
                       "}" ],
                   "extra":
                     {  } },
-                { "title": "Change the current member's email address",
+                { "title": "Change the current member's login email",
                   "body":
                     [ "import { authentication } from 'wix-members-backend';",
                       "",
