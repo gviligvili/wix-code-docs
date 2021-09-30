@@ -2,7 +2,7 @@
   "memberOf": "wix-members-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 57,
       "filename": "index.js" },
@@ -389,28 +389,64 @@
         "extra":
           {  } },
       { "name": "changeLoginEmail",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
               "type": "string",
               "doc": "Member ID." },
             { "name": "newEmail",
-              "type": "string" } ],
+              "type": "string",
+              "doc": "New login email address." } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "string" ] },
-            "doc": "Fulfilled - Session token, which can be applied using the\n[wix-members `applySessionToken()` function](wix-members/authentication-obj/applysessiontoken)\nto log the member in.\nRejected - Error message." },
+                  [ "wix-members-backend.Members.Member" ] },
+            "doc": "Fulfilled - Member with the updated login email address.\nRejected - Error message." },
         "locations":
           [ { "lineno": 1,
               "filename": "changeLoginEmail.js" } ],
         "docs":
           { "summary": "Changes a member's login email address.",
+            "description":
+              [ "The `changeLoginEmail()` function returns a Promise",
+                "that resolves to an updated member object",
+                "when the specified member's login email address is changed.",
+                "",
+                "After running this function, the new login email can be used to log in the specified member,",
+                "and the old email is no longer used to log the member in.",
+                "If the specified member uses social login (for example, Google login)",
+                "and the member tries to log in with the old email address,",
+                "the member will be re-registered with the old email address.",
+                "",
+                "> **Note:**",
+                "> `changeLoginEmail()` cannot be used for site contributors with admin access." ],
             "links": [],
             "examples":
-              [ { "title": "Approve a pending member using an email address",
+              [ { "title": "Change a member's login email",
+                  "body":
+                    [ "import { authentication } from 'wix-members-backend';",
+                      "",
+                      "// Sample memberId value:",
+                      "// 2f15ad3c-75e4-5df7-8ed4-13fee71433ca",
+                      "",
+                      "export function myChangeLoginEmailFunction(memberId, newEmail) {",
+                      "  return authentication.changeLoginEmail(memberId, newEmail)",
+                      "    .then((updatedMember) => {",
+                      "      const newLoginEmail = updatedMember.loginEmail;",
+                      "      console.log('New login email is', newLoginEmail);",
+                      "",
+                      "      return updatedMember;",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    })",
+                      "}" ],
+                  "extra":
+                    {  } },
+                { "title": "Change the current member's email address",
                   "body":
                     [ "import { authentication } from 'wix-members-backend';",
                       "",
@@ -435,7 +471,7 @@
                       " * \"JWS.eyJraWQiOiJQSXpvZGJiQiIsImFsZyI6IkhTMjU2In0.eyJkYXRhIjoie1wiaWRcIjpcImViNDNhYjk5LTMwNDAtNGNhMC04OTNkLTNjNWZhMzdjNjNhZFwiLFwiY29sbGVjdGlvbklkXCI6XCI5YmVjNThlNi02NDExLTQ5OTEtOGU1ZC0wYWRhOTE4MmI5NWVcIixcIm1ldGFTaXRlSWRcIjpcIjFmZjQ2YTk2LWRlYTYtNDlkYS04M2JhLTUxNjRmYjYyZDgzOVwiLFwib3duZXJcIjpmYWxzZSxcImNyZWF0aW9uVGltZVwiOjE2MjgxMTcwNjU5NDcsXCJleHBpcmVzSW5cIjoxMjA5NjAwMDAwLFwiZXhwaXJhdGlvblRpbWVcIjoxNjI4MTE3MTg1OTQ3LFwibGFzdFJlZnJlc2hlZFwiOjAsXCJhZG1pblwiOmZhbHNlfSIsImlhdCI6MTYyODExNzA2NX0.VGNW1Q26zD8BmSvlljFlP6-OhvYs_Pa2hQidS2tt9No\"",
                       " */" ],
                   "extra":
-                    { "description": "This example contains a backend function that approves a pending member\nusing their email address. It returns a session token\nto be used in page code to log in the member who was just approved." } } ],
+                    { "description": "This example changes the currently logged-in member's email address\nwith the member-provided email and the retrieved member ID." } } ],
             "extra":
               {  } },
         "extra":
