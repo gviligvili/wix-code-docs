@@ -421,7 +421,9 @@
                 "the member will be re-registered with the old email address.",
                 "",
                 "> **Note:**",
-                "> `changeLoginEmail()` cannot be used for site contributors with admin access." ],
+                "> `changeLoginEmail()` cannot be used for site contributors.",
+                "> Site contributors can change their login emails from their Wix",
+                "> [account settings](https://manage.wix.com/account/account-settings)." ],
             "links": [],
             "examples":
               [ { "title": "Change a member's login email",
