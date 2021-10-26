@@ -511,7 +511,7 @@
                       "  }",
                       "});" ],
                   "extra":
-                    { "description": "This example first checks that (1) the new login email is a valid email address,\nand (2) the member is not also a site contributor.\n\nIf both of these checks pass,\nthe new login email provided by the currently logged-in member\nis passed to a backend function that automatically retrieves the member's ID\nand changes the login email." } },
+                    { "description": "The code in this example first checks that\n(1) the new login email is a valid email address,\nand (2) the member is not also a site contributor.\n\nIf both of these checks pass,\nthe new login email provided by the currently logged-in member\nis passed to a backend function that automatically retrieves the member's ID\nand changes the login email." } },
                 { "title": "Change a member's login email from an admin page",
                   "body":
                     [ "/******************************************",
@@ -560,7 +560,7 @@
                       "",
                       "});" ],
                   "extra":
-                    { "description": "This example allows a site contributor with admin permissions\nto change any member's login email.\n\nIt starts by populating the `#memberList` dropdown list\nwith data from the `Members/PrivateMemberData` collection.\nThe site contributor selects the member whose email they want to change,\nthen specifies a new email in the `#loginEmail` text input.\nThe member ID and new email are passed to a backend function\nthat calls `changeLoginEmail()`." } } ],
+                    { "description": "The code in this example allows a site contributor with admin permissions\nto change any member's login email.\n\nIt starts by populating the `#memberList` dropdown list\nwith data from the `Members/PrivateMemberData` collection.\nThe site contributor selects the member whose email they want to change,\nthen specifies a new email in the `#loginEmail` text input.\nThe member ID and new email are passed to a backend function\nthat calls `changeLoginEmail()`." } } ],
             "extra":
               {  } },
         "extra":
