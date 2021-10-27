@@ -55,7 +55,7 @@
           "",
           " You can use the Pricing Plans APIs to manage the purchase of both online and offline orders. ",
           "",
-          " ![Ordering Flows](../assets/images/ordering.png)",
+          " ![Ordering Flows](../../assets/images/ordering.png)",
           "",
           " #### A Typical Online Ordering Flow",
           "",
@@ -234,8 +234,7 @@
         {  } },
   "properties":
     [ { "name": "checkout",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "wix-pricing-plans-backend.Checkout",
@@ -251,8 +250,7 @@
         "extra":
           {  } },
       { "name": "events",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "wix-pricing-plans-backend.Events",
@@ -267,8 +265,7 @@
         "extra":
           {  } },
       { "name": "orders",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "wix-pricing-plans-backend.Orders",
@@ -1675,8 +1672,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Perk",
         "locations":
           [ { "lineno": 68,
@@ -1853,8 +1849,7 @@
                     [ "singlePaymentForDuration",
                       "singlePaymentUnlimited",
                       "subscription" ] } ] },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PricingInfo",
         "locations":
           [ { "lineno": 39,

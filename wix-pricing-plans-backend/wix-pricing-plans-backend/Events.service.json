@@ -65,7 +65,7 @@
           "",
           "The following flowchart details order events and statuses. ",
           "",
-          " ![Ordering Events And Statuses](../assets/images/orderEvents.png)" ],
+          " ![Ordering Events And Statuses](../../assets/images/orderEvents.png)" ],
       "links": [],
       "examples": [],
       "extra":
@@ -73,8 +73,7 @@
   "properties": [],
   "operations":
     [ { "name": "onOrderAutoRenewCanceled",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -112,8 +111,7 @@
         "extra":
           {  } },
       { "name": "onOrderBillingCycleTriggered",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -202,8 +200,7 @@
         "extra":
           {  } },
       { "name": "onOrderCanceled",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -241,8 +238,7 @@
         "extra":
           {  } },
       { "name": "onOrderCreated",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -389,8 +385,7 @@
         "extra":
           {  } },
       { "name": "onOrderEndDatePostponed",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -476,8 +471,7 @@
         "extra":
           {  } },
       { "name": "onOrderEnded",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -515,8 +509,7 @@
         "extra":
           {  } },
       { "name": "onOrderMarkedAsPaid",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -601,8 +594,7 @@
         "extra":
           {  } },
       { "name": "onOrderPaused",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -691,8 +683,7 @@
         "extra":
           {  } },
       { "name": "onOrderPurchased",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -772,8 +763,7 @@
         "extra":
           {  } },
       { "name": "onOrderResumed",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -864,8 +854,7 @@
         "extra":
           {  } },
       { "name": "onOrderStartDateChanged",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -956,8 +945,7 @@
         "extra":
           {  } },
       { "name": "onOrderStarted",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -1036,8 +1024,7 @@
         "extra":
           {  } },
       { "name": "onOrderUpdated",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -1283,8 +1270,7 @@
         "extra":
           {  } },
       { "name": "onPlanPurchased",
-        "labels":
-          [ "new" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -1925,8 +1911,7 @@
               "doc": "How many trial days were given to the subscriber of the plan." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderAutoRenewCanceledEvent",
         "locations":
           [ { "lineno": 406,
@@ -1958,8 +1943,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderBillingCycleEventData",
         "locations":
           [ { "lineno": 186,
@@ -2035,8 +2019,7 @@
               "doc": "Wix Pay transaction ID." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderBillingCycleTriggeredEvent",
         "locations":
           [ { "lineno": 396,
@@ -2119,8 +2102,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderCanceledEvent",
         "locations":
           [ { "lineno": 324,
@@ -2152,8 +2134,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderCreatedEvent",
         "locations":
           [ { "lineno": 386,
@@ -2231,8 +2212,7 @@
               "doc": "Order information." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderEndDatePostponedEvent",
         "locations":
           [ { "lineno": 334,
@@ -2312,8 +2292,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderEndedEvent",
         "locations":
           [ { "lineno": 365,
@@ -2345,8 +2324,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderEventData",
         "locations":
           [ { "lineno": 177,
@@ -2416,8 +2394,7 @@
               "doc": "Order information." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderEventMetadata",
         "locations":
           [ { "lineno": 198,
@@ -2497,8 +2474,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderMarkedAsPaidEvent",
         "locations":
           [ { "lineno": 313,
@@ -2577,8 +2553,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderPausedEvent",
         "locations":
           [ { "lineno": 355,
@@ -2661,8 +2636,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderPurchasedEvent",
         "locations":
           [ { "lineno": 302,
@@ -2731,8 +2705,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderResumedEvent",
         "locations":
           [ { "lineno": 344,
@@ -2817,8 +2790,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderStartDateChangedEvent",
         "locations":
           [ { "lineno": 376,
@@ -2903,8 +2875,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderStartedEvent",
         "locations":
           [ { "lineno": 292,
@@ -2975,8 +2946,7 @@
               "doc": "Data about the order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "OrderUpdatedEvent",
         "locations":
           [ { "lineno": 211,
@@ -3049,8 +3019,7 @@
               "doc": "Order information." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Period",
         "locations":
           [ { "lineno": 158,
@@ -3179,8 +3148,7 @@
               "doc": "Time period for billing the plan, such as `MONTH`." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PlanArchivedEvent",
         "locations":
           [ { "lineno": 264,
@@ -3450,8 +3418,7 @@
               "doc": "Object containing the details about the plan's order." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PlanUpdatedEvent",
         "locations":
           [ { "lineno": 231,
@@ -3648,8 +3615,7 @@
               "doc": "The cost of the plan." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ValidFor",
         "locations":
           [ { "lineno": 140,
@@ -3778,7 +3744,6 @@
               "doc": "Object containing the period for which the plan is valid." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }
