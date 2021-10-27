@@ -1,6 +1,7 @@
 { "name": "wix-pricing-plans-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 193,
       "filename": "plans.js" },
@@ -54,7 +55,7 @@
           "",
           " You can use the Pricing Plans APIs to manage the purchase of both online and offline orders. ",
           "",
-          " ![Ordering Flows](../../assets/images/ordering.png)",
+          " ![Ordering Flows](../assets/images/ordering.png)",
           "",
           " #### A Typical Online Ordering Flow",
           "",
