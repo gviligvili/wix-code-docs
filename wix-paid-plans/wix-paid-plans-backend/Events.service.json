@@ -1,8 +1,7 @@
 { "name": "Events",
   "memberOf": "wix-paid-plans-backend",
   "mixes": [],
-  "labels":
-    [ "new" ],
+  "labels": [],
   "location":
     { "lineno": 8,
       "filename": "events.js" },
