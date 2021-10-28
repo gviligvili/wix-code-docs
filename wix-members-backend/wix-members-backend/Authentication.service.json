@@ -1,8 +1,7 @@
 { "name": "Authentication",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels":
-    [ "new" ],
+  "labels": [],
   "location":
     { "lineno": 57,
       "filename": "index.js" },

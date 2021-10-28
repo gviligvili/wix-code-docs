@@ -1,8 +1,7 @@
 { "name": "Members",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels":
-    [ "new" ],
+  "labels": [],
   "location":
     { "lineno": 31,
       "filename": "index.js" },

@@ -2,7 +2,7 @@
   "memberOf": "wix-members-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 5,
       "filename": "index.js" },
@@ -125,7 +125,8 @@
         "extra":
           {  } },
       { "name": "getRoles",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params": [],
         "ret":
@@ -160,12 +161,7 @@
                 "| ------------------------------------------------ | ---------------------------------------------------------------------- |",
                 "| Logged-in member                                 | Array of member roles                                                  |",
                 "| Site owner or contributor with admin permissions | Array of member roles, plus an additional role where `name` is `Admin` |",
-                "| Anyone else                                      | Promise is rejected                                                    |",
-                "<!--END:ONLY:VELO-->",
-                "",
-                "<!--ONLY:REST",
-                "Returns a list of groups assigned to the current user",
-                "<!--END:ONLY:REST-->" ],
+                "| Anyone else                                      | Promise is rejected                                                    |" ],
             "links": [],
             "examples":
               [ { "title": "Get the currently logged-in member's roles",
